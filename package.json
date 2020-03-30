@@ -1,0 +1,30 @@
+{
+  "name": "node-coronavirus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc"
+  },
+  "files": [
+    "lib/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taylorallen0913/node-coronavirus.git"
+  },
+  "author": "Taylor Allen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taylorallen0913/node-coronavirus/issues"
+  },
+  "homepage": "https://github.com/taylorallen0913/node-coronavirus#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "typescript": "^3.8.3"
+  }
+}
