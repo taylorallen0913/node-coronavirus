@@ -1,5 +1,9 @@
 import axios from "axios";
 
+/**
+ * Gets latest amount of total confirmed cases, deaths, and recovered.
+ * @returns latest values
+ */
 export const getLatest = () => {
   return axios
     .get("https://coronavirus-tracker-api.herokuapp.com/v2/latest")
@@ -11,6 +15,10 @@ export const getLatest = () => {
     });
 };
 
+/**
+ * Gets the data-sources that are currently available to Coronavirus Tracker API to retrieve the data of the pandemic.
+ * @returns data sources
+ */
 export const getSources = () => {
   return axios
     .get("https://coronavirus-tracker-api.herokuapp.com/v2/sources")
@@ -22,6 +30,10 @@ export const getSources = () => {
     });
 };
 
+/**
+ * Gets data about a location by its country id
+ * @param id country id
+ */
 export const getLocationById = (id: string) => {
   return axios
     .get("https://coronavirus-tracker-api.herokuapp.com/v2/locations/" + id)
@@ -33,6 +45,10 @@ export const getLocationById = (id: string) => {
     });
 };
 
+/**
+ * Gets data about a location by its country code
+ * @param countryCode country code
+ */
 export const getLocationByCountryCode = (countryCode: string) => {
   return axios
     .get(
